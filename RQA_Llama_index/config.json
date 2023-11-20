@@ -1,0 +1,6 @@
+{
+    "llm_model_path":   "/Users/paula/Projects/Text Gen/Llama2/models/Llama-2-13B-GGUF/llama-2-13b.Q8_0.gguf",
+    "PDFDirectory": "/Users/paula/Projects/Hackathon2023/GUIFile_llamaindex/PDFData",
+    "model_kwargs": "{'device': 'mps'}",
+    "encode_kwargs": "{'normalize_embeddings': True}"
+}
