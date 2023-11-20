@@ -22,8 +22,8 @@ llm = LlamaCPP(
     # You can pass in the URL to a GGML model to download it automatically
     # model_url='https://huggingface.co/TheBloke/Mistral-7B-Instruct-v0.1-GGUF/resolve/main/mistral-7b-instruct-v0.1.Q4_K_M.gguf',
     # optionally, you can set the path to a pre-downloaded model instead of model_url
-    # model_path="/Users/paula/Projects/Text Gen/Llama2/models/Llama-2-7B-GGUF/llama-2-7b.Q8_0.gguf",
-    model_path = "/Users/paula/Projects/Text Gen/Llama2/models/Mistral-7B-GGUF/mistral-7b-v0.1.Q8_0.gguf",
+    # model_path="/....../Llama2/models/Llama-2-7B-GGUF/llama-2-7b.Q8_0.gguf",
+    model_path = "/...../Llama2/models/Mistral-7B-GGUF/mistral-7b-v0.1.Q8_0.gguf",
     temperature=0.1,
     max_new_tokens=256,
     # llama2 has a context window of 4096 tokens, but we set it lower to allow for some wiggle room
