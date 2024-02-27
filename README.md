@@ -2,7 +2,7 @@
 A repo where I try out Retrival Question Answer (RQA) examples presented in different libraries (LangChain, Llama_index) using scripts or a Graphical User Interface. Anyone interested can use and modify the scripts as needed.
 
 ## Advanced RAG
-This repo contains scripts and a GUI developed using streamlit where the user can load a PDF file and select one from among two advanced retrival techniques ( Scentence Window or Auto Merging Retrival). It also allows the possibility to select a large language model from the dropdown menu. It works with ollama api and all the popular llm models (llama2, mistral, gemma)  are generally available with ollama. Before selecting any of the models in GUI, they should be first tried out with ollama api directly by executing `ollama run llama2:7b`. Other possible models are listed [here](https://ollama.com/library)
+This repo contains scripts and a GUI developed using streamlit where the user can load a PDF file and select one from among two advanced retrival techniques ( Scentence Window or Auto Merging Retrival). It also allows the possibility to select a large language model from the dropdown menu. It works with ollama api and all the popular llm models (llama2, mistral, gemma)  are generally available with ollama. Before selecting any of the models in GUI, they should be first tried out with ollama api directly by executing `ollama run llama2:7b`. Other possible models are listed [here](https://ollama.com/library) There is a pdf data file folder for testing. Some extra hyperparamters like `sampling_topk` and `rerank_topk` are currently hard coded and can be set as variable inputs in GUI.
 
 ![screenshot](./AdvancedRAG/data/Screenshot%202024-02-26%20161518.png)
 
@@ -24,3 +24,6 @@ This repo contains a script as well as a GUI developed using streamlit where the
 ### Extra Scripts
 * `llama_index_test2.py` can be executed if GUI is not needed
 * `llama_index_test.py` shows a RQA example without using RetrieverQueryEngine but it is not working properly. However it has an example of how to use tokens
+* `llamaIndex_AMR_together.py` scripted version of how Auto Merging Retrival works.
+* `llamaIndex_SW_MetaReplacement.py` scripted version of Sentence Window Retrival and Metadata Replacement
+* `Evaluation_set_generate.py` script for generating a evaluation set for comparing different RAG techniques.
